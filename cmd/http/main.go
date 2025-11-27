@@ -40,6 +40,7 @@ func main() {
 
 	handlers := []Handler{
 		handlers.NewContactsHandler(queries, services.NewContactService(queries)),
+		handlers.NewIndexHandler(),
 	}
 
 	a := Application{
