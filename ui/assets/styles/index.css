@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@source "../../**/*.templ";
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}

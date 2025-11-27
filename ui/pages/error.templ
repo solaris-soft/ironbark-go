@@ -1,0 +1,11 @@
+package pages
+
+templ Error(statusCode int, message string) {
+	<div class="container mx-auto">
+		<h1 class="text-2xl font-bold">Uh oh! An Error Occurred: { statusCode }</h1>
+		<p>The server encountered an error while processing your request.</p>
+		<p>Please try again later.</p>
+		<p>If the problem persists, please contact support.</p>
+		<p>Error: { message }</p>
+	</div>
+}

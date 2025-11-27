@@ -1,0 +1,36 @@
+# Binaries
+bin/
+tmp/
+
+# Environment variables
+.env
+.env.local
+
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Air
+tmp/
+
+# Generated files (if you want to ignore them)
+# Uncomment if you don't want to commit generated code
+# **/*_templ.go
+

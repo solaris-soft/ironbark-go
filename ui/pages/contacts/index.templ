@@ -1,0 +1,21 @@
+package contacts
+
+import "github.com/solaris-soft/ironbark-go/serializers"
+
+templ Index(contacts []serializers.ContactSerializer) {
+	<div class="container mx-auto">
+		<h1 class="text-2xl font-bold">Contacts</h1>
+		<ul>
+			if len(contacts) == 0 {
+				<p>No contacts found</p>
+				<a href="/contacts/new">Create a new contact</a>
+			} else {
+				<ul>
+					for _, contact := range contacts {
+						<li>{ contact.FirstName } { contact.LastName } </li>
+					}
+				</ul>
+			}
+		</ul>
+	</div>
+}
